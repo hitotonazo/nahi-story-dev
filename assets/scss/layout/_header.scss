@@ -1,0 +1,35 @@
+@use "../foundation/variables" as v;
+
+// Header
+.site-header {
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  min-height: 88px;
+  border-bottom: 1px solid rgba(v.$gold, .35);
+  background: rgba(v.$ivory, .97);
+}
+
+.site-header__inner {
+  display: flex;
+  align-items: center;
+  gap: clamp(20px, 3vw, 52px);
+  min-height: 88px;
+}
+
+.site-header__logo { flex: 0 1 188px; }
+.site-header__logo img { width: 188px; }
+.site-header__nav { margin-left: auto; }
+.site-header__nav-list { display: flex; align-items: center; gap: clamp(15px, 2.1vw, 32px); padding: 0; margin: 0; list-style: none; }
+.site-header__nav a { text-decoration: none; font-family: "Josefin Sans", "Noto Sans JP", sans-serif; font-size: 14px; font-weight: 500; letter-spacing: .09em; white-space: nowrap; }
+.site-header__nav a:hover { color: v.$gold; }
+.site-header__actions { display: flex; align-items: center; gap: 10px; }
+.site-header__reset { min-width: 108px; min-height: 44px; padding: 8px 15px; color: v.$navy; border: 1px solid v.$gold; background: transparent; cursor: pointer; font-size: 14px; letter-spacing: .08em; white-space: nowrap; }
+.site-header__reset:hover { color: v.$white; background: v.$navy; }
+
+// SP Navigation
+.site-header__menu-button { display: none; width: 44px; height: 44px; padding: 11px 9px; border: 1px solid v.$navy; background: transparent; cursor: pointer; }
+.site-header__menu-line { display: block; width: 24px; height: 1px; margin: 5px auto; background: v.$navy; transition: transform .2s, opacity .2s; }
+.site-header__menu-button[aria-expanded="true"] .site-header__menu-line:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+.site-header__menu-button[aria-expanded="true"] .site-header__menu-line:nth-child(2) { opacity: 0; }
+.site-header__menu-button[aria-expanded="true"] .site-header__menu-line:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }

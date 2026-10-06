@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+// SCSS entry point: generated CSS is assets/css/style.css.
+@use "foundation/variables";
+@use "foundation/base";
+@use "layout/container";
+@use "layout/header";
+@use "layout/footer";
+@use "component/button";
+@use "project/common";
+@use "project/home";
+@use "project/content-pages";
+@use "project/truth";
+@use "foundation/responsive";

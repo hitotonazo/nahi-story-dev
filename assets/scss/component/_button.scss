@@ -1,0 +1,23 @@
+@use "../foundation/variables" as v;
+
+// Button
+.c-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 10px 28px;
+  border: 1px solid transparent;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: .08em;
+  transition: color .2s, background-color .2s, border-color .2s;
+}
+.c-button--primary { color: v.$white; border-color: v.$navy; background: v.$navy; }
+.c-button--primary:hover { border-color: v.$gold; background: #173d5b; }
+.c-button--secondary { color: v.$navy; border-color: v.$gold; background: transparent; }
+.c-button--secondary:hover { color: v.$white; background: v.$navy; }
+.c-button--text { padding-inline: 4px; color: v.$navy; border-bottom-color: v.$gold; }
+.c-button--text:hover { color: #7a5c22; }

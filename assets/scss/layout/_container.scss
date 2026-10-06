@@ -1,0 +1,9 @@
+@use "../foundation/variables" as v;
+
+// Container
+.l-container {
+  width: min(calc(100% - 80px), v.$container);
+  margin-inline: auto;
+}
+
+.l-container--narrow { max-width: v.$container-narrow; }

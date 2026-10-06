@@ -1,0 +1,12 @@
+@use "../foundation/variables" as v;
+
+// Footer
+.site-footer { color: v.$ivory; background: v.$deep-navy; }
+.site-footer__inner { display: grid; grid-template-columns: minmax(180px, 280px) 1fr; gap: 48px 80px; padding-block: 64px 32px; }
+.site-footer__brand { display: block; align-self: start; padding: 18px; background: v.$ivory; }
+.site-footer__brand img { width: 240px; }
+.site-footer__nav { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 12px 28px; padding: 0; margin: 0; list-style: none; }
+.site-footer__nav a { text-decoration: none; font-family: "Josefin Sans", "Noto Sans JP", sans-serif; font-size: 14px; letter-spacing: .08em; }
+.site-footer__nav a:hover { color: #d7bd84; }
+.site-footer__meta { grid-column: 1 / -1; padding-top: 24px; border-top: 1px solid rgba(v.$ivory, .25); font-size: 14px; line-height: 1.8; }
+.site-footer__meta p { margin-bottom: 4px; }

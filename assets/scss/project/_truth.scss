@@ -119,6 +119,7 @@
 .truth-request .l-container--narrow { max-width: 880px; }
 .truth-request__en { margin-bottom: 12px; color: #aeb3b6; font-family: "Josefin Sans", sans-serif; font-size: clamp(18px, 2.4vw, 28px); line-height: 1.35; letter-spacing: .18em; }
 .request-form { display: grid; gap: 28px; padding: clamp(24px, 5vw, 48px); border: 1px solid #4b3235; background: #0e1113; }
+.truth-request .l-container { max-width: 800px; }
 .request-form__field { display: grid; gap: 9px; }
 .request-form__field label,
 .request-form__group h3 { color: #e4e6e4; font-size: 15px; font-weight: 700; }
@@ -147,6 +148,9 @@
 .request-form__actions { display: grid; grid-template-columns: 1fr; gap: 16px; padding-top: 8px; }
 .request-form__actions .c-button { width: 100%; min-width: 0; }
 .request-form__actions .c-button--secondary { color: #f1f1ee; border-color: #666d71; background: transparent; }
+.request-form__submit { width: 100%; margin-top: 4px; }
+.request-form__submit:disabled { cursor: default; opacity: .65; }
+.request-form__result { padding: 18px 20px; margin: 0; color: #f1f1ee; border-left: 3px solid #a72b2b; background: #15191c; line-height: 1.8; }
 
 .truth-ending { padding-block: clamp(90px, 12vw, 160px); color: #ededeb; border-bottom: 1px solid #4c2226; background: #08090a; text-align: center; }
 .truth-ending h2 { width: fit-content; padding: 0 0 12px; margin: 0 auto 28px; border: 0; border-bottom: 1px solid #7e3034; }

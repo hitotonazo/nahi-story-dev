@@ -148,7 +148,7 @@
               <tr>
                 <th scope="row" data-label="対象番号">R-017</th>
                 <td data-label="所属">重大事件関係者</td>
-                <td data-label="案件分類">山本誠一議員暗殺事件</td>
+                <td data-label="案件分類">████議員暗殺事件</td>
                 <td data-label="依頼元">████████</td>
                 <td data-label="処理結果"><strong>完了</strong></td>
               </tr>
@@ -166,8 +166,8 @@
         </div>
         <div class="truth-subject">
           <div class="truth-subject__images"><img loading="lazy" decoding="async" src="images/r017-mugshot.webp"
-              alt="対象R-017の照合用写真" width="1448" height="1086"><img loading="lazy" decoding="async"
-              src="images/r017-news-clipping.webp" alt="R-017に関する新聞記事切り抜き" width="1448" height="1086"></div>
+              alt="R-017の人物記録資料" width="1448" height="1086"><img loading="lazy" decoding="async"
+              src="images/r017-news-clipping.webp" alt="R-017に関連する新聞記事" width="1470" height="1070"></div>
           <div class="truth-record-card">
             <dl>
               <div>
@@ -176,11 +176,11 @@
               </div>
               <div>
                 <dt>対象</dt>
-                <dd>高橋 新一</dd>
+                <dd>████ ████</dd>
               </div>
               <div>
                 <dt>案件</dt>
-                <dd>山本誠一議員暗殺事件</dd>
+                <dd>████議員暗殺事件</dd>
               </div>
               <div>
                 <dt>依頼元</dt>
@@ -404,48 +404,23 @@
         <div class="truth-heading">
           <p class="truth-section__number">09 / SPECIAL OPERATION REQUEST</p>
           <p class="truth-request__en">R ROUTE<br>SPECIAL OPERATION REQUEST</p>
-          <h2 id="truth-request">Rルート特殊運用申請</h2>
+          <h2 id="truth-request">Rルート運用申請</h2>
         </div>
-        <form class="request-form" aria-label="R-018入力済み特殊運用申請">
-          <div class="request-form__field"><label for="request-id">申請番号</label><input id="request-id" type="text" value="R-018" readonly></div>
-          <div class="request-form__field"><label for="request-client">依頼元</label><input id="request-client" type="text" value="████████" readonly></div>
+        <form class="request-form" aria-label="Rルート運用申請" data-operation-request>
           <div class="request-form__field"><label for="request-subject">対象者</label><input id="request-subject" type="text" value="████ ████" readonly></div>
-          <div class="request-form__field"><label for="request-affiliation">対象者所属</label><input id="request-affiliation" type="text" value="████省" readonly></div>
-          <div class="request-form__field"><label for="request-category">案件分類</label><select id="request-category" disabled><option selected>内部資料持出</option></select></div>
-          <div class="request-form__field"><label for="request-route">処理希望区分</label><select id="request-route" class="request-form__danger-select" disabled><option selected>R</option></select></div>
-          <div class="request-form__field"><label for="request-date">希望実施日</label><input id="request-date" type="text" value="2027.01.08" readonly></div>
-          <div class="request-form__field"><label for="request-time">希望運用時刻</label><input id="request-time" type="text" value="16:05" readonly></div>
-          <div class="request-form__field"><label for="request-passengers">降車予定人数</label><input id="request-passengers" type="text" value="1名" readonly></div>
-
-          <div class="request-form__group" role="group" aria-labelledby="request-reason-label">
-            <h3 id="request-reason-label">申請理由</h3>
-            <div class="request-form__choices request-form__choices--checks">
-              <label><input type="checkbox" disabled><span>機密情報漏洩</span></label>
-              <label><input type="checkbox" checked disabled><span>内部資料持出</span></label>
-              <label><input type="checkbox" disabled><span>内部告発</span></label>
-              <label><input type="checkbox" disabled><span>関係離脱</span></label>
-              <label><input type="checkbox" disabled><span>重大事件関係</span></label>
-              <label><input type="checkbox" disabled><span>その他</span></label>
-            </div>
-          </div>
-          <div class="request-form__field"><label for="request-detail">申請理由詳細</label><textarea id="request-detail" rows="3" readonly>内部資料持出を確認。
-関係資料の外部流出防止を目的としてR処理を申請。</textarea></div>
-          <div class="request-form__group" role="group" aria-labelledby="request-custody-label">
-            <h3 id="request-custody-label">身柄確保</h3>
-            <div class="request-form__choices"><label><input type="radio" name="custody" disabled><span>依頼元対応</span></label><label><input type="radio" name="custody" checked disabled><span>専任移送班手配</span></label></div>
-          </div>
-          <div class="request-form__group" role="group" aria-labelledby="request-exit-label">
-            <h3 id="request-exit-label">降車方式</h3>
-            <div class="request-form__choices"><label><input type="radio" name="exit-method" checked disabled><span>単独降車</span></label><label><input type="radio" name="exit-method" disabled><span>複数降車</span></label></div>
-          </div>
-          <div class="request-form__group" role="group" aria-labelledby="request-notice-label">
-            <h3 id="request-notice-label">対象者への事前通知</h3>
-            <div class="request-form__choices"><label class="request-form__danger-choice"><input type="radio" name="notice" checked disabled><span>不要</span></label><label><input type="radio" name="notice" disabled><span>必要</span></label></div>
-          </div>
-
-          <div class="request-form__status" aria-label="申請状態"><div><span>STATUS</span><strong>承認済</strong></div><div><span>受付状態</span><strong class="truth-danger">R運用登録済</strong></div></div>
-          <div class="request-form__actions"><a class="c-button c-button--primary truth-share__button" href="https://twitter.com/intent/tweet" target="_blank" rel="noopener noreferrer" data-x-share aria-label="調査を報告する（新しいタブで開く）">調査を報告する</a><a class="c-button c-button--secondary" href="index.html">TOPへ戻る</a></div>
+          <div class="request-form__field"><label for="request-date">実施希望日</label><input id="request-date" type="text" value="2027.01.08" readonly></div>
+          <div class="request-form__field"><label for="request-time">実施希望時刻</label><input id="request-time" type="text" value="16:05" readonly></div>
+          <button class="c-button c-button--primary request-form__submit" type="submit" data-request-submit>申請する</button>
+          <p class="request-form__result" data-request-result role="status" aria-live="polite" hidden>受付ました。<br>運用担当から連絡をお待ちください。</p>
         </form>
+      </div>
+    </section>
+
+    <section class="truth-share" aria-labelledby="truth-share">
+      <div class="l-container l-container--narrow">
+        <h2 id="truth-share">調査記録を共有</h2>
+        <a class="c-button c-button--primary truth-share__button" href="https://twitter.com/intent/tweet" target="_blank" rel="noopener noreferrer" data-x-share aria-label="調査を報告する（新しいタブで開く）">調査を報告する</a>
+        <div class="truth-share__back"><a class="c-button c-button--secondary" href="index.html">TOPへ戻る</a></div>
       </div>
     </section>
   </main>

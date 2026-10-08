@@ -84,8 +84,8 @@
 
     recordSearch.addEventListener('submit', (event) => {
       event.preventDefault();
-      const query = input.value.replace(/[\s\u3000]/g, '');
-      const matched = query === '運用記録Rルート';
+      const query = input.value.trim().replace(/[\s\u3000]+/g, '');
+      const matched = query.includes('Rルート');
       result.textContent = matched ? '該当する機密記録あり。' : '該当記録なし。';
       result.classList.toggle('is-match', matched);
       if (matched) window.location.href = 'truth.html';
